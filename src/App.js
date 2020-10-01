@@ -3,20 +3,21 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './Header';
 import Home from './Home';
+import Checkout from './Checkout';
 
 function App() {
   return (
     <Router>
-      {" "}
       {/* higher order component */}
       <div className="app">
         <Switch>
           <Route path="/checkout/">
             <Header />
-            <h1>Checkout</h1>
+            <Checkout />
           </Route>
           <Route path="/login">
-            <h1>Login page</h1>
+            <Login />
+
           </Route>
           {/* This is the default route */}
           <Route path="/">
